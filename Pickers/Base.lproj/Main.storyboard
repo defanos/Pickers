@@ -23,6 +23,63 @@
             </objects>
             <point key="canvasLocation" x="2037" y="870"/>
         </scene>
+        <!--Custom-->
+        <scene sceneID="FMw-fi-2fR">
+            <objects>
+                <viewController title="Custom" id="nQ4-m7-uKj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hcH-qK-qxH"/>
+                        <viewControllerLayoutGuide type="bottom" id="S1a-16-5V6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fPJ-pn-osc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="2DI-Jn-3rm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeO-kf-Zgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="1516"/>
+        </scene>
+        <!--Dependent-->
+        <scene sceneID="Adl-TA-v9q">
+            <objects>
+                <viewController title="Dependent" id="nNy-2F-BNf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dvd-d1-3aN"/>
+                        <viewControllerLayoutGuide type="bottom" id="DNF-Pk-xQ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fak-no-29A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="CxN-bP-7yh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LpC-CY-Jrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="1516"/>
+        </scene>
+        <!--Double-->
+        <scene sceneID="ZGi-I4-KbF">
+            <objects>
+                <viewController title="Double" id="ReL-aU-Q1f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wb9-Tz-dgL"/>
+                        <viewControllerLayoutGuide type="bottom" id="PyH-op-EbS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rSm-OG-5uU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="afX-H6-8Or"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3K-fq-wxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="1557"/>
+        </scene>
         <!--Date-->
         <scene sceneID="e2Z-Cw-MU8">
             <objects>
@@ -55,6 +112,9 @@
                     <connections>
                         <segue destination="Rad-Ej-IqK" kind="relationship" relationship="viewControllers" id="ccw-yy-c9p"/>
                         <segue destination="mDS-Xs-kMq" kind="relationship" relationship="viewControllers" id="7Rc-AO-FHk"/>
+                        <segue destination="ReL-aU-Q1f" kind="relationship" relationship="viewControllers" id="IZd-CA-DvD"/>
+                        <segue destination="nNy-2F-BNf" kind="relationship" relationship="viewControllers" id="YfF-Zb-dTt"/>
+                        <segue destination="nQ4-m7-uKj" kind="relationship" relationship="viewControllers" id="SlS-U5-fwi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDo-qK-P6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,6 +124,9 @@
     </scenes>
     <resources>
         <image name="clockicon" width="24" height="24"/>
+        <image name="dependenticon" width="25" height="24"/>
+        <image name="doubleicon" width="25" height="24"/>
         <image name="singleicon" width="25" height="24"/>
+        <image name="toolicon" width="24" height="24"/>
     </resources>
 </document>
