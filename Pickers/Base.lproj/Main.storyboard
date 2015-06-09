@@ -7,7 +7,7 @@
         <!--Single-->
         <scene sceneID="nh5-xC-bPb">
             <objects>
-                <viewController title="Single" id="mDS-Xs-kMq" sceneMemberID="viewController">
+                <viewController title="Single" id="mDS-Xs-kMq" customClass="SDFSingleComponentPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kG7-Ov-6Ub"/>
                         <viewControllerLayoutGuide type="bottom" id="07h-SU-jKE"/>
@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJJ-f2-ywc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037" y="870"/>
+            <point key="canvasLocation" x="2037" y="866"/>
         </scene>
         <!--Custom-->
         <scene sceneID="FMw-fi-2fR">
             <objects>
-                <viewController title="Custom" id="nQ4-m7-uKj" sceneMemberID="viewController">
+                <viewController title="Custom" id="nQ4-m7-uKj" customClass="SDFCustomPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hcH-qK-qxH"/>
                         <viewControllerLayoutGuide type="bottom" id="S1a-16-5V6"/>
@@ -45,7 +45,7 @@
         <!--Dependent-->
         <scene sceneID="Adl-TA-v9q">
             <objects>
-                <viewController title="Dependent" id="nNy-2F-BNf" sceneMemberID="viewController">
+                <viewController title="Dependent" id="nNy-2F-BNf" customClass="SDFDependentComponentPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dvd-d1-3aN"/>
                         <viewControllerLayoutGuide type="bottom" id="DNF-Pk-xQ7"/>
@@ -64,7 +64,7 @@
         <!--Double-->
         <scene sceneID="ZGi-I4-KbF">
             <objects>
-                <viewController title="Double" id="ReL-aU-Q1f" sceneMemberID="viewController">
+                <viewController title="Double" id="ReL-aU-Q1f" customClass="SDFDoubleComponentPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wb9-Tz-dgL"/>
                         <viewControllerLayoutGuide type="bottom" id="PyH-op-EbS"/>
@@ -83,7 +83,7 @@
         <!--Date-->
         <scene sceneID="e2Z-Cw-MU8">
             <objects>
-                <viewController title="Date" id="Rad-Ej-IqK" sceneMemberID="viewController">
+                <viewController title="Date" id="Rad-Ej-IqK" customClass="SDFDatePickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U1d-Kn-rll"/>
                         <viewControllerLayoutGuide type="bottom" id="bK1-6E-3fw"/>
