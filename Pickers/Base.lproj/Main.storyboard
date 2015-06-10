@@ -15,9 +15,38 @@
                     <view key="view" contentMode="scaleToFill" id="dDV-ey-pVI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSY-oS-uXn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mDS-Xs-kMq" id="K3A-3U-faL"/>
+                                    <outlet property="delegate" destination="mDS-Xs-kMq" id="DsG-wS-yL2"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAA-Lg-NOb">
+                                <rect key="frame" x="200" y="285" width="201" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="VtI-AR-6RG"/>
+                                </constraints>
+                                <state key="normal" title="Select" backgroundImage="whiteButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="mDS-Xs-kMq" eventType="touchUpInside" id="5Bq-H0-zIi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.99931060120000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="BAA-Lg-NOb" secondAttribute="centerX" id="1hJ-em-qgi"/>
+                            <constraint firstAttribute="centerX" secondItem="jSY-oS-uXn" secondAttribute="centerX" id="G3P-Jh-Xbr"/>
+                            <constraint firstAttribute="centerY" secondItem="BAA-Lg-NOb" secondAttribute="centerY" id="Q2C-50-HxL"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="zTY-PK-b9q"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="jSY-oS-uXn" id="RtK-zD-Jnv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJJ-f2-ywc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,5 +196,6 @@
         <image name="doubleicon" width="25" height="24"/>
         <image name="singleicon" width="25" height="24"/>
         <image name="toolicon" width="24" height="24"/>
+        <image name="whiteButton" width="29" height="38"/>
     </resources>
 </document>

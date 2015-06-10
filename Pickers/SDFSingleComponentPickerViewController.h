@@ -10,4 +10,6 @@
 
 @interface SDFSingleComponentPickerViewController : UIViewController
 
+<UIPickerViewDelegate, UIPickerViewDataSource>
+
 @end
