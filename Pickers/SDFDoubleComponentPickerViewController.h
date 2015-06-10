@@ -10,4 +10,6 @@
 
 @interface SDFDoubleComponentPickerViewController : UIViewController
 
+<UIPickerViewDelegate, UIPickerViewDataSource>
+
 @end

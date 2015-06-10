@@ -31,8 +31,10 @@
 - (IBAction)buttonPressed:(id)sender {
     NSInteger row = [self.singlePicker selectedRowInComponent:0];
     NSString *selected = self.characterNames[row];
-    NSString *title = [[NSString alloc]
-                       initWithFormat:@"You selected %@!", selected];
+    NSString *title = [
+                       [NSString alloc]
+                       initWithFormat:@"You selected %@!", selected
+                       ];
     UIAlertView *alert = [
                           [UIAlertView alloc]
                           initWithTitle:title
