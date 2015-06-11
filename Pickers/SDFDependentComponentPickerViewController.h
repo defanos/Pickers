@@ -10,4 +10,6 @@
 
 @interface SDFDependentComponentPickerViewController : UIViewController
 
+<UIPickerViewDelegate, UIPickerViewDataSource>
+
 @end

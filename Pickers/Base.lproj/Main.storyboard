@@ -82,9 +82,39 @@
                     <view key="view" contentMode="scaleToFill" id="Fak-no-29A">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="dependentPicker" translatesAutoresizingMaskIntoConstraints="NO" id="Ump-lK-IRi">
+                                <rect key="frame" x="82" y="20" width="428" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nNy-2F-BNf" id="NfK-IL-ruM"/>
+                                    <outlet property="delegate" destination="nNy-2F-BNf" id="aF6-70-8Gf"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFD-jn-aTj">
+                                <rect key="frame" x="162" y="318" width="254" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="xEt-ls-qVH"/>
+                                </constraints>
+                                <state key="normal" title="Select" backgroundImage="whiteButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="nNy-2F-BNf" eventType="touchUpInside" id="CsJ-lo-SIg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0026072770631854203" blue="0.75065181926579638" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="uFD-jn-aTj" secondAttribute="centerY" id="8s6-ro-TKx"/>
+                            <constraint firstAttribute="centerX" secondItem="Ump-lK-IRi" secondAttribute="centerX" id="YLl-6Q-SRy"/>
+                            <constraint firstAttribute="centerX" secondItem="uFD-jn-aTj" secondAttribute="centerX" id="pvD-9a-7Qa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="CxN-bP-7yh"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="Ump-lK-IRi" id="4ui-jI-hHy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LpC-CY-Jrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,6 +19,7 @@
 		DF37054D1B26DDD9005FD5C2 /* SDFDoubleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF37054C1B26DDD9005FD5C2 /* SDFDoubleComponentPickerViewController.m */; };
 		DF3705501B26DDEF005FD5C2 /* SDFDependentComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF37054F1B26DDEF005FD5C2 /* SDFDependentComponentPickerViewController.m */; };
 		DF3705531B26DE01005FD5C2 /* SDFCustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3705521B26DE01005FD5C2 /* SDFCustomPickerViewController.m */; };
+		DF3705551B296B63005FD5C2 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF3705541B296B63005FD5C2 /* statedictionary.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DF37054F1B26DDEF005FD5C2 /* SDFDependentComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDFDependentComponentPickerViewController.m; sourceTree = "<group>"; };
 		DF3705511B26DE01005FD5C2 /* SDFCustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDFCustomPickerViewController.h; sourceTree = "<group>"; };
 		DF3705521B26DE01005FD5C2 /* SDFCustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDFCustomPickerViewController.m; sourceTree = "<group>"; };
+		DF3705541B296B63005FD5C2 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		DF37051E1B26DC69005FD5C2 /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
+				DF3705541B296B63005FD5C2 /* statedictionary.plist */,
 				DF3705231B26DC69005FD5C2 /* AppDelegate.h */,
 				DF3705241B26DC69005FD5C2 /* AppDelegate.m */,
 				DF3705261B26DC69005FD5C2 /* ViewController.h */,
@@ -226,6 +229,7 @@
 			files = (
 				DF37052B1B26DC69005FD5C2 /* Main.storyboard in Resources */,
 				DF3705301B26DC69005FD5C2 /* LaunchScreen.xib in Resources */,
+				DF3705551B296B63005FD5C2 /* statedictionary.plist in Resources */,
 				DF37052D1B26DC69005FD5C2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +450,7 @@
 				DF3705411B26DC69005FD5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF3705421B26DC69005FD5C2 /* Build configuration list for PBXNativeTarget "PickersTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +459,7 @@
 				DF3705441B26DC69005FD5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
