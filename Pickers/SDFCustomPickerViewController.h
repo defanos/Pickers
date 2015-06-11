@@ -10,4 +10,6 @@
 
 @interface SDFCustomPickerViewController : UIViewController
 
+<UIPickerViewDataSource, UIPickerViewDelegate>
+
 @end

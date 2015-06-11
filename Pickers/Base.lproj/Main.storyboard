@@ -63,9 +63,51 @@
                     <view key="view" contentMode="scaleToFill" id="fPJ-pn-osc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cci-SL-U77">
+                                <rect key="frame" x="169" y="270" width="263" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="VTz-3O-3Gx"/>
+                                </constraints>
+                                <state key="normal" title="Spin" backgroundImage="blueButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spin:" destination="nQ4-m7-uKj" eventType="touchUpInside" id="Cnz-HP-N9s"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="customPicker" translatesAutoresizingMaskIntoConstraints="NO" id="avW-Yc-A43">
+                                <rect key="frame" x="169" y="20" width="263" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nQ4-m7-uKj" id="m5l-Rb-n1v"/>
+                                    <outlet property="delegate" destination="nQ4-m7-uKj" id="DwS-pn-X14"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WIN!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScV-22-zPg">
+                                <rect key="frame" x="219" y="204" width="162" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="tZh-1L-TdC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.99931060120000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.53035683150068014" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ScV-22-zPg" secondAttribute="centerX" id="fL9-pj-Dfl"/>
+                            <constraint firstItem="cci-SL-U77" firstAttribute="top" secondItem="ScV-22-zPg" secondAttribute="bottom" constant="21" id="hWh-6i-ebo"/>
+                            <constraint firstAttribute="centerY" secondItem="cci-SL-U77" secondAttribute="centerY" id="iA7-w9-OpH"/>
+                            <constraint firstAttribute="centerX" secondItem="cci-SL-U77" secondAttribute="centerX" id="mpY-Bd-ilT"/>
+                            <constraint firstAttribute="centerX" secondItem="avW-Yc-A43" secondAttribute="centerX" id="zr1-1A-uCI"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="2DI-Jn-3rm"/>
+                    <connections>
+                        <outlet property="customPicker" destination="avW-Yc-A43" id="8A4-6w-BLe"/>
+                        <outlet property="winLabel" destination="ScV-22-zPg" id="D2V-yN-Jfs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeO-kf-Zgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
