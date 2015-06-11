@@ -31,8 +31,8 @@
                     [UIImage imageNamed:@"lemon"],
                     [UIImage imageNamed:@"apple"]
                     ];
-    
-//    srandom(time(NULL));
+
+    srandom( (unsigned int) (time(NULL)));
 }
 
 - (void)didReceiveMemoryWarning {
